@@ -1,0 +1,150 @@
+@import url('http://fonts.cdnfonts.com/css/mont');
+
+html {
+    width: 1600px;
+    height: 900px;
+    font-family: 'Mont', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url("/img/backHeader.png");
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    background: linear-gradient(#00000080, rgba(0,0,0,0));
+    
+}
+
+.logo {
+    width: 142px;
+    height: 60px;
+    box-sizing: content-box;
+    padding: 30px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 41px;
+}
+
+.menu__card {
+    padding: 0 40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.join {
+    position: absolute;
+    padding: 18px 0;
+    left: 1280px;
+}
+
+.join__button {
+    width: 280px;
+    height: 72px;
+    border-radius: 24px;
+    background: #EF302B;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    border-color: #EF302B;
+}
+
+.below__header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.left {
+    font-weight: 600;
+    width: 880px;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.backHeaderLeft { 
+    position: absolute;
+    width: 787.8px;
+    height: 784.88px;
+    background: url("/img/backHeaderLeft.png") no-repeat;
+    filter: blur(30px);
+    transform: rotate(-4.14deg);
+    top: -100px;
+    left: -50px;    
+}
+
+.backHeaderRight{ 
+    position: absolute;
+    width: 1077px;
+    height: 1073px;
+    background: url("/img/backHeaderRight.png") no-repeat;
+    filter: blur(50px);
+    transform: rotate(3.78deg);
+    top: -250px;
+    left: 650px;
+    
+}
+
+.master {
+    font-size: 96px;
+    padding-top: 152px;
+    padding-bottom: 40px;
+    line-height: 100px;
+}
+
+.institute {
+    font-size: 52px;
+    padding-bottom: 65px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: calc(1600px - 880px);
+    font-weight: 600;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.right__first {
+    width: 496px;
+    bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    padding: 102px 0 40px 0;
+}
+
+.right__second {
+    bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    padding-top: 102px;
+}
+
+.main {
+    z-index: 10;
+    height: 100px;
+    background-color: black;
+   
+}
