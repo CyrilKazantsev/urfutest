@@ -174,7 +174,7 @@ a {
 .description__title {
     width: 496px;
     color: #1E4391;
-    font-weight: 500; /* 600 - много, 500 - нет, подключается 400 */
+    font-weight: 600; /* 600 - много, 500 - нет, подключается 400 */
     font-size: 52px;
     line-height: 110%;
 }
@@ -242,3 +242,171 @@ a {
     line-height: 140%;
 }
 
+/* Блок: Как поступить? */
+
+.proceed {
+    padding-left: 40px;
+}
+
+.proceed__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.type__tuition {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+}
+
+.tuition {
+    margin: 20px 10px;
+    height: 26px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #222222;
+    opacity: 0.4;
+}
+
+.tuition__active {
+    color: #1E4391;
+    opacity: 1;
+}
+
+.switch {
+    position: relative;
+    width: 54px;
+    height: 26px;
+    background-color: #1E4391;
+    border-radius: 16px;
+    margin: 20px 10px;
+}
+
+.switch__ball {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.proceed__steps {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Делаем кружки */
+
+.step__number {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    align-items: center;
+}
+
+.step__number-title {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1E4391;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.step__circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #1E4391;
+    box-sizing: border-box;
+}
+
+.step__line {
+    width: 0px;
+    height: 35px;
+    border: 2px solid #1E4391;
+}
+
+/* Описание шагов поступления */
+
+.step {
+    display: flex;
+    flex-direction: row;
+    width: calc(1480px / 4);
+    padding-right: 10px;
+}
+
+.step__info {
+    padding-left: 20px;
+}
+
+.step__info-title {
+    height: 40px;
+    margin-bottom: 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #1E4391;
+    display: flex;
+    align-items: center;
+}
+
+.step__info-text{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+    display: flex;
+    align-items: center;    
+}
+
+.step__info-tuition {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.info-tuition__text {
+    opacity: 0.6;
+}
+
+.info-tuition__period {
+    opacity: 0.8;
+    color: #1E4391;
+}
+
+.step__info-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1E4391;
+}
+
+.step__info-link-underline{
+    width: 162px;
+    height: 0px;
+    border: 1px solid #1E4391;
+}
+
+.active__number {
+    background-color: #EF302B;
+}
+
+.active__border {
+    border: 2px solid #EF302B;
+}
