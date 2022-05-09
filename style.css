@@ -283,12 +283,12 @@ a {
     background-color: #1E4391;
     border-radius: 16px;
     margin: 20px 10px;
+    cursor: pointer;
 }
 
 .switch__ball {
     position: absolute;
     top: 4px;
-    left: 4px;
     width: 18px;
     height: 18px;
     background-color: #FFFFFF;
