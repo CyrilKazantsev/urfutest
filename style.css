@@ -1,8 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/mont');
 
 html {
-    width: 1600px;
-    height: 900px;
+    width: 100%;
     font-family: 'Mont', sans-serif;
 }
 
@@ -11,21 +10,27 @@ body {
 }
 
 header {
-    background-image: url("./img/backHeader.png");
-    background-repeat: no-repeat;
-    height: 900px;
+    background: no-repeat 100% url("./img/backHeader.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
 }
 
 
 a {
     text-decoration: none;
+    cursor: pointer;
+    color: inherit;
 }
 
 .header {
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 400px;
+    height: 45vh;
     background: linear-gradient(#00000080, rgba(0,0,0,0));
     
 }
@@ -53,7 +58,7 @@ a {
 .join {
     position: absolute;
     padding: 18px 0;
-    left: 1280px;
+    left: calc(100% - 20%)
 }
 
 .join__button {
@@ -74,6 +79,7 @@ a {
     display: flex;
     flex-direction: row;
     color: white;
+    height: 55vh;
 }
 
 .left {
@@ -90,8 +96,8 @@ a {
     background: url("./img/backHeaderLeft.png") no-repeat;
     filter: blur(30px);
     transform: rotate(-4.14deg);
-    top: -100px;
-    left: -50px;    
+    top: -20%;
+    left: -3%;    
 }
 
 .backHeaderRight{ 
@@ -101,12 +107,10 @@ a {
     background: url("./img/backHeaderRight.png") no-repeat;
     filter: blur(50px);
     transform: rotate(3.78deg);
-    top: -250px;
-    left: 650px;
+    top: -50%;
+    right: -10%;
     
 }
-
-
 
 .master {
     font-size: 96px;
@@ -124,12 +128,13 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: calc(1600px - 880px);
     font-weight: 600;
     font-size: 24px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     z-index: 1;
+    align-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .right__first {
@@ -147,13 +152,20 @@ a {
     font-size: 24px;
     line-height: 120%;
     padding-top: 102px;
+    
+}
+
+.institute__underline {
+    width: 276px;
+    height: 0px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
  /* Об институте */
 
 .main {
     z-index: 10;
-    height: 1143px;
     background-color: white;
    
 }
@@ -168,11 +180,11 @@ a {
 
 .descrition__about {
     padding-left: 40px;
-    padding-right: 19px;
+    padding-right: 50px;
 }
 
 .description__title {
-    width: 496px;
+    width: 25vw;
     color: #1E4391;
     font-weight: 600; /* 600 - много, 500 - нет, подключается 400 */
     font-size: 52px;
@@ -204,19 +216,28 @@ a {
 
 /* Видео и данные */
 
+.videos__numbers {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+}
+
 .videos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .video {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 /* Данные под видео (((фото)))) */
 
 .numbers {
+    padding: 10px;
+    grid-row-gap: 20px;
     display: grid;
+    justify-items: center;
     gap: 1px;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -269,11 +290,13 @@ a {
     line-height: 120%;
     color: #222222;
     opacity: 0.4;
+    transition-duration: 0.4s;
 }
 
 .tuition__active {
     color: #1E4391;
     opacity: 1;
+    transition-duration: 0.4s;
 }
 
 .switch {
@@ -294,6 +317,7 @@ a {
     background-color: #FFFFFF;
     border-radius: 50%;
     z-index: 1;
+    transition-duration: 0.4s;
 }
 
 .proceed__steps {
@@ -409,4 +433,9 @@ a {
 
 .active__border {
     border: 2px solid #EF302B;
+}
+
+.footer {
+    height: 32px;
+    background: linear-gradient(270deg, #FF2D7F -0.71%, #FB3727 47.63%, #FEEA0F 100%);
 }

@@ -24,14 +24,20 @@ function changeType() {
             inperson.innerText = "20.06 - 08.08"
             inabsentiaText.innerText = "Очно-заочная форма обучения:"
             inabsentiaNumber.innerText = "20.06 - 08.08"
+            inpersonExam.innerText = "04.07 - 13.08"
+            inabsentiaTextExam.innerText = "Очно-заочная форма обучения:"
+            inabsentiaNumberExam.innerText = "04.07 - 13.09 и 22.08 - 12.09"
             break;
         case "4px":
             switchBall.style.left = "32px";
             contract.classList.add("tuition__active")
             budget.classList.remove("tuition__active")
             inperson.innerText = "20.06 - 23.09"
-            inabsentiaText.innerText = "Очно-заочная и зачная формы обучения:"
+            inabsentiaText.innerText = "Очно-заочная и заочная формы обучения:"
             inabsentiaNumber.innerText = "20.06 - 28.10"
+            inpersonExam.innerText = "04.07 - 13.08 и 22.08 - 24.09"
+            inabsentiaTextExam.innerText = "Очно-заочная и заочная формы обучения:"
+            inabsentiaNumberExam.innerText = "04.07 - 13.08 и 22.08 - 29.10"
             break;
     }
 }
